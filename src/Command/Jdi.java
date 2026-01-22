@@ -37,10 +37,7 @@ public class Jdi implements Command {
         String input = scanner.nextLine();
 
         Lokace aktualni = StavHry.getAktualniLokace();
-
-        // 1. Kontrola, zda je zadaný cíl v seznamu východů aktuální lokace
         if (aktualni.getVychody().contains(input)) {
-            // 2. Najdeme objekt Lokace podle názvu v hlavním seznamu
             for (Lokace l : DataHry.getLocations()) {
                 if (l.getNazev().equalsIgnoreCase(input)) {
                     StavHry.setAktualniLokace(l);
