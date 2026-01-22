@@ -2,7 +2,6 @@ package Command;
 
 import AETHEREA.Lokace;
 import Hra.DataHry;
-import Hra.Start;
 import Hra.StavHry;
 
 import java.util.Scanner;
