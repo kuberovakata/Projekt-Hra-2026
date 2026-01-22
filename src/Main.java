@@ -1,4 +1,3 @@
-import Hra.DataHry;
 import Hra.Start;
 
 public class Main {

@@ -1,0 +1,79 @@
+{
+  "locations": [
+    {
+      "id": 0,
+      "nazev": "Mobilní operační modul CSS-VAULT",
+      "popis": "Tento modul přistál společně s Nixem v hlavním hangáru stanice. Je to tvá jediná spojnice s korporací.",
+      "vychody": [
+        "Přechodová komora (Decontamination Bay)"
+      ]
+    },
+    {
+      "id": 1,
+      "nazev": "Přechodová komora (Decontamination Bay)",
+      "popis": "Relativně stabilní, ale stěny jsou pokryty žlutým slizem.",
+      "vychody": [
+        "Mobilní operační modul CSS-VAULT",
+        "Hlavní serverovna (Data Center)",
+        "Společenská místnost a jídelna (The Mess Hall)"
+      ]
+    },
+    {
+      "id": 2,
+      "nazev": "Společenská místnost a jídelna (The Mess Hall)",
+      "popis": "Dům podvodníka s různými cetkami.",
+      "vychody": [
+        "Přechodová komora (Decontamination Bay)",
+        "Hlavní serverovna (Data Center)",
+        "Reaktorová hala (The Core)",
+        "Ošetřovna (Med-Bay)"
+      ]
+    },
+    {
+      "id": 3,
+      "nazev": "Botanická laboratoř (Hydroponics)",
+      "popis": "Místo autority; může otevírat postup v ději.",
+      "vychody": [
+        "Reaktorová hala (The Core)"
+      ]
+    },
+    {
+      "id": 4,
+      "nazev": "Kryogenní komora (Cryo-Storage)",
+      "popis": "Útulná chatrč; zde lze získat důležitý úkol.",
+      "vychody": [
+        "Hlavní serverovna (Data Center)",
+        "Reaktorová hala (The Core)"
+      ]
+    },
+    {
+      "id": 5,
+      "nazev": "Hlavní serverovna (Data Center)",
+      "popis": "Místo pro průzkum a získání vzácného kamene.",
+      "vychody": [
+        "Přechodová komora (Decontamination Bay)",
+        "Kryogenní komora (Cryo-Storage)"
+      ]
+    },
+    {
+      "id": 6,
+      "nazev": "Ošetřovna (Med-Bay)",
+      "popis": "Borůvkový porost; lze získat borůvky.",
+      "vychody": [
+        "Reaktorová hala (The Core)",
+        "Společenská místnost a jídelna (The Mess Hall)"
+      ]
+    },
+    {
+      "id": 7,
+      "nazev": "Reaktorová hala (The Core)",
+      "popis": "Zahrada a dílna; Gerald zde pracuje s kameny.",
+      "vychody": [
+        "Kryogenní komora (Cryo-Storage)",
+        "Společenská místnost a jídelna (The Mess Hall)",
+        "Ošetřovna (Med-Bay)",
+        "Botanická laboratoř (Hydroponics)"
+      ]
+    }
+  ]
+}
