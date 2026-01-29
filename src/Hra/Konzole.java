@@ -9,6 +9,8 @@ import Command.Vysyp;
 import Command.Vezmi;
 import Command.Help;
 import Command.Info;
+import Command.Sis;
+import Command.Sken;
 
 
 public class Konzole {
@@ -29,6 +31,8 @@ public class Konzole {
         commands.put("konec", new Konec());
         commands.put("vysyp", new Vysyp());
         commands.put("vezmi", new Vezmi());
+        commands.put("sis", new Sis());
+        commands.put("sken", new Sken());
     }
 
     public void execute() {
