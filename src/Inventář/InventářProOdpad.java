@@ -1,7 +1,6 @@
 package Inventář;
 
 import AETHEREA.Lokace;
-import Hra.DataHry;
 import Hra.StavHry;
 import Předměty.Odpad;
 
@@ -11,7 +10,7 @@ public class InventářProOdpad {
 
     int hodnotaMista = 0;
     int pocetPolozek;
-    ArrayList<Odpad> InventářProOdpad = new ArrayList<>();
+    ArrayList<Odpad> inventářProOdpad = new ArrayList<>();
 
     public InventářProOdpad() {
     }
@@ -34,10 +33,48 @@ public class InventářProOdpad {
         if ((hodnotaMista + nalezenyOdpad.getVahu()) > 100) {
             return "Zásobník je plný! vrat se do CSS-VAULT a zkus to znovu.";
         }
-        InventářProOdpad.add(nalezenyOdpad);
+        inventářProOdpad.add(nalezenyOdpad);
         hodnotaMista += nalezenyOdpad.getVahu();
         odpadyVMistnosti.remove(nalezenyOdpad);
 
         return "Nix sebral: " + nalezenyOdpad.getNazev() + ". Aktuální náklad: " + hodnotaMista + "/100 kg.";
+    }
+
+    public void vyprazdnit() {
+        inventářProOdpad.clear();
+        hodnotaMista = 0;
+    }
+
+    public int getHodnotaMista() {
+        return hodnotaMista;
+    }
+
+    public void setHodnotaMista(int hodnotaMista) {
+        this.hodnotaMista = hodnotaMista;
+    }
+
+    public int getPocetPolozek() {
+        return pocetPolozek;
+    }
+
+    public void setPocetPolozek(int pocetPolozek) {
+        this.pocetPolozek = pocetPolozek;
+    }
+
+    public ArrayList<Odpad> getInventářProOdpad() {
+        return inventářProOdpad;
+    }
+
+    public void setInventářProOdpad(ArrayList<Odpad> inventářProOdpad) {
+        this.inventářProOdpad = inventářProOdpad;
+    }
+
+    @Override
+    public String toString() {
+        return "InventářProOdpad{" +
+                "hodnotaMista=" + hodnotaMista +
+                ", pocetPolozek=" + pocetPolozek +
+                ", inventářProOdpad=" + inventářProOdpad +
+                '}';
     }
 }
