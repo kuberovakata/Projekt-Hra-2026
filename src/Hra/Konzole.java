@@ -4,6 +4,11 @@ import java.util.Scanner;
 import java.util.HashMap;
 import Command.Command;
 import Command.Jdi;
+import Command.Konec;
+import Command.Vysyp;
+import Command.Vezmi;
+import Command.Help;
+import Command.Info;
 
 
 public class Konzole {
@@ -18,7 +23,12 @@ public class Konzole {
     }
 
     public void inicialization() {
+        commands.put("help", new Help());
         commands.put("jdi", new Jdi());
+        commands.put("info", new Info());
+        commands.put("konec", new Konec());
+        commands.put("vysyp", new Vysyp());
+        commands.put("vezmi", new Vezmi());
     }
 
     public void execute() {

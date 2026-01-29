@@ -1,6 +1,7 @@
 package Command;
 
 public class Použij implements Command {
+
     @Override
     public String execute() {
         return "";
