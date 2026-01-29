@@ -1,6 +1,6 @@
 package AETHEREA;
 
-import Hra.DataHry;
+import Předměty.Odpad;
 
 import java.util.ArrayList;
 
@@ -11,6 +11,7 @@ public class Lokace {
     private String nazev;
     private String popis;
     private ArrayList<String> vychody;
+    private ArrayList<Odpad> odpady;
 
     public Lokace() {
     }
@@ -47,6 +48,14 @@ public class Lokace {
         this.vychody = vychody;
     }
 
+    public ArrayList<Odpad> getOdpady() {
+        return odpady;
+    }
+
+    public void setOdpady(ArrayList<Odpad> odpady) {
+        this.odpady = odpady;
+    }
+
     @Override
     public String toString() {
         return "Lokace{" +
@@ -54,6 +63,7 @@ public class Lokace {
                 ", nazev='" + nazev + '\'' +
                 ", popis='" + popis + '\'' +
                 ", vychody=" + vychody +
+                ", odpady=" + odpady +
                 '}';
     }
 }
