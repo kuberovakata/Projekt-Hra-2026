@@ -1,9 +1,35 @@
 package Command;
 
+import AETHEREA.Lokace;
+import Hra.StavHry;
+import Předměty.Odpad;
+import java.util.ArrayList;
+
 public class Sken implements Command {
 
     @Override
     public String execute() {
+        Lokace aktualni = StavHry.getAktualniLokace();
+        ArrayList<Odpad> odpady = aktualni.getOdpady();
+        System.out.println("\n[SIS AI]: Zahajuji hloubkový sken sektoru: " + aktualni.getNazev());
+        System.out.println("-------------------------------------------------------");
+
+        if (odpady.isEmpty()) {
+            System.out.println("Stav: SEKTOR JE 100% DEKONTAMINOVÁN.");
+            return "";
+        }
+
+        int zbyvajiciProgres = 0;
+        for (Odpad o : odpady) {
+            System.out.print("- " + o.getNazev());
+            System.out.print(" (" + o.getVelikost() + ")");
+            System.out.println(" | " + o.getVahu() + " kg");
+            zbyvajiciProgres += o.getProgres();
+        }
+        int aktualniCistota = 100 - zbyvajiciProgres;
+        System.out.println("-------------------------------------------------------");
+        System.out.println("AKTUÁLNÍ ČISTOTA SEKTORU: " + aktualniCistota + "%");
+        System.out.println();
         return "";
     }
 

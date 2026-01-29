@@ -3,17 +3,17 @@ package Command;
 import AETHEREA.Lokace;
 import Hra.DataHry;
 import Hra.StavHry;
-
-import java.util.ArrayList;
+import Inventář.InventářProOdpad;
 
 public class Vysyp implements Command {
 
-    public String execute() {
+    InventářProOdpad inventářProOdpad = new InventářProOdpad();
 
+    public String execute() {
         Lokace aktualni = StavHry.getAktualniLokace();
         if (aktualni.equals(DataHry.getLocations().getFirst())){
-            // dodelat: naklad se odstrani z InventářProOdpad
-            return "vysypal jsi svuj batoh";
+            inventářProOdpad.vyprazdnit();
+            return "vysypal jsi svuj batoh" + inventářProOdpad.toString();
         }
         return "nejsi v operacnim modulu, dojdi tam a zkus to znovu";
     }

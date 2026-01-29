@@ -6,8 +6,7 @@ public class Help implements Command {
         return "";
     }
     public String listPrikazu() {
-        // dodelat: postupem se pridaji dalsi
-        return "seznam prikazu: help, info, jdi, konec, vezmi, vysyp";
+        return "seznam prikazu: help, info, jdi, konec, sis, sken, vezmi, vysyp, ";
     }
 
     @Override
