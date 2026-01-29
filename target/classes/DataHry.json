@@ -6,7 +6,8 @@
       "popis": "Tento modul přistál společně s Nixem v hlavním hangáru stanice. Je to tvá jediná spojnice s korporací.",
       "vychody": [
         "Přechodová komora (Decontamination Bay)"
-      ]
+      ],
+      "odpady": []
     },
     {
       "id": 1,
@@ -16,6 +17,15 @@
         "Mobilní operační modul CSS-VAULT",
         "Hlavní serverovna (Data Center)",
         "Společenská místnost a jídelna (The Mess Hall)"
+      ],
+      "odpady": [
+        { "nazev": "Žlutý sliz", "velikost": "střední", "vahu": 15, "progres": 15 },
+        { "nazev": "Zkroucený plát ventilace", "velikost": "velký", "vahu": 40, "progres": 25 },
+        { "nazev": "Roztavený dron", "velikost": "velký", "vahu": 60, "progres": 30 },
+        { "nazev": "Prázdná nádoba na dusík", "velikost": "velký", "vahu": 35, "progres": 15 },
+        { "nazev": "Zmuchlaný papír", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Lichá bota", "velikost": "střední", "vahu": 10, "progres": 5 },
+        { "nazev": "Kus kartonu", "velikost": "velký", "vahu": 25, "progres": 5 }
       ]
     },
     {
@@ -27,6 +37,18 @@
         "Hlavní serverovna (Data Center)",
         "Reaktorová hala (The Core)",
         "Ošetřovna (Med-Bay)"
+      ],
+      "odpady": [
+        { "nazev": "Plesnivý sendvič", "velikost": "malý", "vahu": 10, "progres": 10 },
+        { "nazev": "Mutující proteinová kaše", "velikost": "střední", "vahu": 15, "progres": 15 },
+        { "nazev": "Žlutý sliz", "velikost": "střední", "vahu": 15, "progres": 15 },
+        { "nazev": "Zkažené zásoby", "velikost": "velký", "vahu": 45, "progres": 20 },
+        { "nazev": "Zkroucený plát ventilace", "velikost": "velký", "vahu": 40, "progres": 15 },
+        { "nazev": "Kelímek od kávy", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Obal od tyčinky", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Zmáčknutá plechovka", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Starý časopis", "velikost": "střední", "vahu": 15, "progres": 5 },
+        { "nazev": "Kus hadru", "velikost": "střední", "vahu": 25, "progres": 5 }
       ]
     },
     {
@@ -35,6 +57,15 @@
       "popis": "Místo autority; může otevírat postup v ději.",
       "vychody": [
         "Reaktorová hala (The Core)"
+      ],
+      "odpady": [
+        { "nazev": "Plesnivý sendvič", "velikost": "malý", "vahu": 10, "progres": 10 },
+        { "nazev": "Utržený šlahoun", "velikost": "velký", "vahu": 45, "progres": 30 },
+        { "nazev": "Žlutý sliz", "velikost": "střední", "vahu": 15, "progres": 15 },
+        { "nazev": "Vysušená biomasa", "velikost": "velký", "vahu": 30, "progres": 25 },
+        { "nazev": "Kelímek od kávy", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Zmáčknutá plechovka", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Roztržená rukavice", "velikost": "malý", "vahu": 5, "progres": 10 }
       ]
     },
     {
@@ -44,6 +75,14 @@
       "vychody": [
         "Hlavní serverovna (Data Center)",
         "Reaktorová hala (The Core)"
+      ],
+      "odpady": [
+        { "nazev": "Žlutý sliz", "velikost": "střední", "vahu": 15, "progres": 20 },
+        { "nazev": "Zkažené zásoby", "velikost": "velký", "vahu": 45, "progres": 30 },
+        { "nazev": "Prázdná nádoba na dusík", "velikost": "velký", "vahu": 35, "progres": 30 },
+        { "nazev": "Obal od tyčinky", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Zmáčknutá plechovka", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Roztržená rukavice", "velikost": "malý", "vahu": 5, "progres": 10 }
       ]
     },
     {
@@ -53,6 +92,15 @@
       "vychody": [
         "Přechodová komora (Decontamination Bay)",
         "Kryogenní komora (Cryo-Storage)"
+      ],
+      "odpady": [
+        { "nazev": "Zkažené zásoby", "velikost": "velký", "vahu": 45, "progres": 25 },
+        { "nazev": "Zkroucený plát ventilace", "velikost": "velký", "vahu": 40, "progres": 20 },
+        { "nazev": "Rozbitý terminál", "velikost": "střední", "vahu": 30, "progres": 20 },
+        { "nazev": "Zmuchlaný papír", "velikost": "malý", "vahu": 5, "progres": 10 },
+        { "nazev": "Kus kartonu", "velikost": "velký", "vahu": 25, "progres": 10 },
+        { "nazev": "Kus hadru", "velikost": "střední", "vahu": 25, "progres": 10 },
+        { "nazev": "Plastová stahovací páska", "velikost": "malý", "vahu": 5, "progres": 5 }
       ]
     },
     {
@@ -62,6 +110,16 @@
       "vychody": [
         "Reaktorová hala (The Core)",
         "Společenská místnost a jídelna (The Mess Hall)"
+      ],
+      "odpady": [
+        { "nazev": "Žlutý sliz", "velikost": "střední", "vahu": 15, "progres": 15 },
+        { "nazev": "Kontaminované obvazy", "velikost": "střední", "vahu": 10, "progres": 15 },
+        { "nazev": "Rozbitá zkumavka", "velikost": "malý", "vahu": 5, "progres": 10 },
+        { "nazev": "Prázdná nádoba na dusík", "velikost": "velký", "vahu": 35, "progres": 20 },
+        { "nazev": "Chirurgický odpad", "velikost": "střední", "vahu": 20, "progres": 15 },
+        { "nazev": "Kelímek od kávy", "velikost": "malý", "vahu": 5, "progres": 10 },
+        { "nazev": "Roztržená rukavice", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Kus hadru", "velikost": "střední", "vahu": 25, "progres": 10 }
       ]
     },
     {
@@ -73,6 +131,15 @@
         "Společenská místnost a jídelna (The Mess Hall)",
         "Ošetřovna (Med-Bay)",
         "Botanická laboratoř (Hydroponics)"
+      ],
+      "odpady": [
+        { "nazev": "Zkroucený plát ventilace", "velikost": "velký", "vahu": 40, "progres": 20 },
+        { "nazev": "Rozbitý terminál", "velikost": "střední", "vahu": 30, "progres": 20 },
+        { "nazev": "Roztavený dron", "velikost": "velký", "vahu": 60, "progres": 30 },
+        { "nazev": "Zmáčknutá plechovka", "velikost": "malý", "vahu": 5, "progres": 10 },
+        { "nazev": "Sudá bota", "velikost": "střední", "vahu": 10, "progres": 10 },
+        { "nazev": "Roztržená rukavice", "velikost": "malý", "vahu": 5, "progres": 5 },
+        { "nazev": "Plastová stahovací páska", "velikost": "malý", "vahu": 5, "progres": 5 }
       ]
     }
   ]
