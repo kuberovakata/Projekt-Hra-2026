@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Sis implements Command {
     @Override
-    public String execute() {
+    public String execute(StavHry stavHry) {
         System.out.println("Ahoj, jsem SIS tvoje AI asistentka jak ti mohu pomoci? : ");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

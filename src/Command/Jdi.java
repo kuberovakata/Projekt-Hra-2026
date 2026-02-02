@@ -8,17 +8,17 @@ import java.util.Scanner;
 
 public class Jdi implements Command {
     @Override
-    public String execute() {
+    public String execute(StavHry stavHry) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kam?");
         String input = scanner.nextLine();
 
-        Lokace aktualni = StavHry.getAktualniLokace();
+        Lokace aktualni = stavHry.getAktualniLokace();
         if (aktualni.getVychody().contains(input)) {
             for (Lokace l : DataHry.getLocations()) {
                 if (l.getNazev().equalsIgnoreCase(input)) {
-                    StavHry.setAktualniLokace(l);
+                    stavHry.setAktualniLokace(l);
                     System.out.println("Vstoupil jsi do: " + l.getNazev());
                     System.out.println(l.getPopis());
                     return "";

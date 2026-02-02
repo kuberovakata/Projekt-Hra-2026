@@ -1,9 +1,11 @@
 package Command;
 
+import Hra.StavHry;
+
 public class Použij implements Command {
 
     @Override
-    public String execute() {
+    public String execute(StavHry stavHry) {
         return "";
     }
 

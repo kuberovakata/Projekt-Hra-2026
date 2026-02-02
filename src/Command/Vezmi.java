@@ -1,17 +1,16 @@
 package Command;
 
-import Inventář.InventářProOdpad;
+import Hra.StavHry;
 
 import java.util.Scanner;
 
 public class Vezmi implements Command {
-    InventářProOdpad inventářProOdpad = new InventářProOdpad();
 
-    public String execute() {
+    public String execute(StavHry stavHry) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Co?");
         String input = scanner.nextLine();
-        return inventářProOdpad.pridarOdpad(input);
+        return stavHry.getInventářProOdpad().pridarOdpad(input, stavHry);
     }
 
     @Override

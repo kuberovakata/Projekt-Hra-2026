@@ -1,6 +1,8 @@
 package Command;
 
+import Hra.StavHry;
+
 public interface Command {
-    String execute();
+    String execute(StavHry stavHry);
     boolean exit();
 }
