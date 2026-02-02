@@ -35,14 +35,14 @@ public class Konzole {
         commands.put("sken", new Sken());
     }
 
-    public void execute() {
+    public void execute(StavHry stavHry) {
         while (!isExit) {
             System.out.print(">> ");
             String input = scanner.nextLine();
             String command = input.trim().toLowerCase();
 
             if (commands.containsKey(command)) {
-                System.out.println(commands.get(command).execute());
+                System.out.println(commands.get(command).execute(stavHry));
                 isExit = commands.get(command).exit();
             } else {
                 System.out.println("neznamy prikaz");

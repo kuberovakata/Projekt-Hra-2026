@@ -15,10 +15,10 @@ public class InventářProOdpad {
     public InventářProOdpad() {
     }
 
-    public String pridarOdpad(String vybranyOdpad){
+    public String pridarOdpad(String vybranyOdpad, StavHry stavHry) {
 
-        ArrayList<Odpad> odpadyVMistnosti = StavHry.getAktualniLokace().getOdpady();
-        Lokace aktualni = StavHry.getAktualniLokace();
+        ArrayList<Odpad> odpadyVMistnosti = stavHry.getAktualniLokace().getOdpady();
+        Lokace aktualni = stavHry.getAktualniLokace();
 
         Odpad nalezenyOdpad = null;
         for (Odpad o : odpadyVMistnosti) {
@@ -35,7 +35,10 @@ public class InventářProOdpad {
         }
         inventářProOdpad.add(nalezenyOdpad);
         hodnotaMista += nalezenyOdpad.getVahu();
+        stavHry.getAktualniLokace().setProcentoCistoty(stavHry.getAktualniLokace().getProcentoCistoty()+nalezenyOdpad.getProgres());
+        stavHry.getProcentaProgresu().vypocetProcentaZaCelouHru();
         odpadyVMistnosti.remove(nalezenyOdpad);
+
 
         return "Nix sebral: " + nalezenyOdpad.getNazev() + ". Aktuální náklad: " + hodnotaMista + "/100 kg.";
     }

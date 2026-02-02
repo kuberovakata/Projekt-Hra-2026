@@ -10,6 +10,7 @@ public class Lokace {
     private String id;
     private String nazev;
     private String popis;
+    private int procentoCistoty;
     private ArrayList<String> vychody;
     private ArrayList<Odpad> odpady;
 
@@ -56,12 +57,21 @@ public class Lokace {
         this.odpady = odpady;
     }
 
+    public int getProcentoCistoty() {
+        return procentoCistoty;
+    }
+
+    public void setProcentoCistoty(int procentoCistoty) {
+        this.procentoCistoty = procentoCistoty;
+    }
+
     @Override
     public String toString() {
         return "Lokace{" +
                 "id='" + id + '\'' +
                 ", nazev='" + nazev + '\'' +
                 ", popis='" + popis + '\'' +
+                ", procentoCistoty=" + procentoCistoty +
                 ", vychody=" + vychody +
                 ", odpady=" + odpady +
                 '}';
