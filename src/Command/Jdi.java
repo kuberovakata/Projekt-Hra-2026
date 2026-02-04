@@ -15,14 +15,28 @@ public class Jdi implements Command {
         String input = scanner.nextLine();
 
         Lokace aktualni = stavHry.getAktualniLokace();
+
         if (aktualni.getVychody().contains(input)) {
             for (Lokace l : DataHry.getLocations()) {
+
+                if (input.equals(DataHry.getLocations().get(7).getNazev()) && !stavHry.isJeOdemcenaReaktorovaMistnost() && !stavHry.isMaIDkartu() ) {
+                    return "bohuzel sem se momentalne nemuzes dostat, najdi ID kartu a zkus to znova";
+                }
+
+                if (input.equals(DataHry.getLocations().get(7).getNazev()) && !stavHry.isJeOdemcenaReaktorovaMistnost() && stavHry.isMaIDkartu() ) {
+                    stavHry.setJeOdemcenaReaktorovaMistnost(true);
+                    System.out.println("Uspesne si pouzil ID kartu");
+                }
+
+
                 if (l.getNazev().equalsIgnoreCase(input)) {
                     stavHry.setAktualniLokace(l);
                     System.out.println("Vstoupil jsi do: " + l.getNazev());
                     System.out.println(l.getPopis());
                     return "";
                 }
+
+
             }
         }
 

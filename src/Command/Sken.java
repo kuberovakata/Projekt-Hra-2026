@@ -1,6 +1,7 @@
 package Command;
 
 import AETHEREA.Lokace;
+import Hra.DataHry;
 import Hra.StavHry;
 import Předměty.Odpad;
 import java.util.ArrayList;
@@ -28,6 +29,9 @@ public class Sken implements Command {
             System.out.print(" (" + o.getVelikost() + ")");
             System.out.println(" | " + o.getVahu() + " kg");
             zbyvajiciProgres += o.getProgres();
+        }
+        if (!stavHry.isMaIDkartu() && stavHry.getAktualniLokace().equals(DataHry.getLocations().get(4))) {
+            System.out.println("ID karta");
         }
         int aktualniCistota = 100 - zbyvajiciProgres;
         System.out.println("-------------------------------------------------------");

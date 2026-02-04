@@ -26,6 +26,16 @@ public class ProcentaProgresu {
         return procentaZaCelouHru;
     }
 
+    public String pocitaniProcent(StavHry stavHry) {
+
+        if (stavHry.getAktualniLokace().getProcentoCistoty()==100) {
+            stavHry.getAktualniLokace().setJeStoProcent(true);
+        }
+        stavHry.getProcentaProgresu().vypocetProcentaZaCelouHru();
+
+        return "";
+    }
+
     public int getProcentaZaCelouHru() {
         return procentaZaCelouHru;
     }

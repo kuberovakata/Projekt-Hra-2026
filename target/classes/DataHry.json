@@ -5,6 +5,7 @@
       "nazev": "Mobilní operační modul CSS-VAULT",
       "popis": "Tento modul přistál společně s Nixem v hlavním hangáru stanice. Je to tvá jediná spojnice s korporací.",
       "procentoCistoty": 100,
+      "jeStoProcent": true,
       "vychody": [
         "Přechodová komora (Decontamination Bay)"
       ],
@@ -15,6 +16,7 @@
       "nazev": "Přechodová komora (Decontamination Bay)",
       "popis": "Relativně stabilní, ale stěny jsou pokryty žlutým slizem.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Mobilní operační modul CSS-VAULT",
         "Hlavní serverovna (Data Center)",
@@ -35,6 +37,7 @@
       "nazev": "Společenská místnost a jídelna (The Mess Hall)",
       "popis": "Dům podvodníka s různými cetkami.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Přechodová komora (Decontamination Bay)",
         "Hlavní serverovna (Data Center)",
@@ -59,6 +62,7 @@
       "nazev": "Botanická laboratoř (Hydroponics)",
       "popis": "Místo autority; může otevírat postup v ději.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Reaktorová hala (The Core)"
       ],
@@ -77,6 +81,7 @@
       "nazev": "Kryogenní komora (Cryo-Storage)",
       "popis": "Útulná chatrč; zde lze získat důležitý úkol.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Hlavní serverovna (Data Center)",
         "Reaktorová hala (The Core)"
@@ -95,6 +100,7 @@
       "nazev": "Hlavní serverovna (Data Center)",
       "popis": "Místo pro průzkum a získání vzácného kamene.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Přechodová komora (Decontamination Bay)",
         "Kryogenní komora (Cryo-Storage)"
@@ -114,6 +120,7 @@
       "nazev": "Ošetřovna (Med-Bay)",
       "popis": "Borůvkový porost; lze získat borůvky.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Reaktorová hala (The Core)",
         "Společenská místnost a jídelna (The Mess Hall)"
@@ -134,6 +141,7 @@
       "nazev": "Reaktorová hala (The Core)",
       "popis": "Zahrada a dílna; Gerald zde pracuje s kameny.",
       "procentoCistoty": 0,
+      "jeStoProcent": false,
       "vychody": [
         "Kryogenní komora (Cryo-Storage)",
         "Společenská místnost a jídelna (The Mess Hall)",
@@ -149,6 +157,23 @@
         { "nazev": "Roztržená rukavice", "velikost": "malý", "vahu": 5, "progres": 5 },
         { "nazev": "Plastová stahovací páska", "velikost": "malý", "vahu": 5, "progres": 5 }
       ]
+    }
+  ],
+  "ukolovePredmety": [
+    {
+      "id": 1,
+      "nazev": "Prázdný datový disk",
+      "popis": "Externí úložiště s vysokou kapacitou. Slouží k zálohování kritických dat ze serverovny."
+    },
+    {
+      "id": 2,
+      "nazev": "Nová procesorová jednotka",
+      "popis": "Klíčový komponent pro řízení magnetické stabilizace jádra. Nahrazuje poškozené obvody v sektoru Core."
+    },
+    {
+      "id": 3,
+      "nazev": "Odběrový box",
+      "popis": "Hermeticky uzavíratelná nádoba s robotickou pinzetou pro bezpečnou manipulaci s biologickými vzorky v botanice."
     }
   ]
 }

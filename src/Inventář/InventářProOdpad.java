@@ -30,13 +30,20 @@ public class InventářProOdpad {
         if (nalezenyOdpad == null) {
             return "Takový odpad tu SIS AI nedetekuje.";
         }
-        if ((hodnotaMista + nalezenyOdpad.getVahu()) > 100) {
+
+//        Tady to mam pouze na TEST  1000 opravit na 100 ================================================================================
+
+        if ((hodnotaMista + nalezenyOdpad.getVahu()) > 1000) {
             return "Zásobník je plný! vrat se do CSS-VAULT a zkus to znovu.";
         }
+
         inventářProOdpad.add(nalezenyOdpad);
         hodnotaMista += nalezenyOdpad.getVahu();
-        stavHry.getAktualniLokace().setProcentoCistoty(stavHry.getAktualniLokace().getProcentoCistoty()+nalezenyOdpad.getProgres());
-        stavHry.getProcentaProgresu().vypocetProcentaZaCelouHru();
+
+        stavHry.getAktualniLokace().setProcentoCistoty(stavHry.getAktualniLokace().getProcentoCistoty() + nalezenyOdpad.getProgres());
+
+        stavHry.getProcentaProgresu().pocitaniProcent(stavHry);
+
         odpadyVMistnosti.remove(nalezenyOdpad);
 
 
