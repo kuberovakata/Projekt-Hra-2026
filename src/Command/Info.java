@@ -8,11 +8,11 @@ public class Info implements Command {
     public String execute(StavHry stavHry) {
         // postupem se pridaji dalsi aktualni informace
         return "Prave se nachazis v" + stavHry.getAktualniLokace().getNazev() + " -- "
-                +stavHry.getAktualniLokace().getProcentoCistoty()+ " -- " + stavHry.getProcentaProgresu().getProcentaZaCelouHru();
+                +stavHry.getAktualniLokace().getProcentoCistoty()+ " -- " + stavHry.getProcentaProgresu().getProcentaZaCelouHru() + stavHry.getProPredmet().getAktualniPredmet().getNazev();
     }
 
     @Override
-    public boolean exit() {
+    public boolean exit(StavHry stavHry) {
         return false;
     }
 }

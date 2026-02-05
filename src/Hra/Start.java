@@ -7,16 +7,17 @@ import Inventář.InventářVModulu;
 
 public class Start {
 
-    Konzole konzole = new Konzole();
-    InventářProOdpad inventářProOdpad = new InventářProOdpad();
-    ProcentaProgresu procentaProgresu = new ProcentaProgresu(0, 0);
-    InventářVModulu inventářVModulu = new InventářVModulu();
-    InventářProPredmet inventářProPredmet = new InventářProPredmet();
-    StavHry stavHry = new StavHry(inventářProOdpad, procentaProgresu, inventářVModulu, inventářProPredmet);
+
 
     public void start(){
-
         DataHry data = DataHry.nacist("resources/DataHry.json");
+
+        Konzole konzole = new Konzole();
+        InventářProOdpad inventářProOdpad = new InventářProOdpad();
+        ProcentaProgresu procentaProgresu = new ProcentaProgresu(0, 0);
+        InventářVModulu inventářVModulu = new InventářVModulu();
+        InventářProPredmet inventářProPredmet = new InventářProPredmet();
+        StavHry stavHry = new StavHry(inventářProOdpad, procentaProgresu, inventářVModulu, inventářProPredmet);
 
         stavHry.setJeOdemcenaReaktorovaMistnost(false);
         stavHry.setMaIDkartu(false);

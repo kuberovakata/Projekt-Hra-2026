@@ -11,6 +11,8 @@ import Command.Help;
 import Command.Info;
 import Command.Sis;
 import Command.Sken;
+import Command.Použit;
+import Command.Ukoncit;
 
 
 public class Konzole {
@@ -33,6 +35,8 @@ public class Konzole {
         commands.put("vezmi", new Vezmi());
         commands.put("sis", new Sis());
         commands.put("sken", new Sken());
+        commands.put("pouzit", new Použit());
+        commands.put("ukoncit", new Ukoncit());
     }
 
     public void execute(StavHry stavHry) {
@@ -43,7 +47,7 @@ public class Konzole {
 
             if (commands.containsKey(command)) {
                 System.out.println(commands.get(command).execute(stavHry));
-                isExit = commands.get(command).exit();
+                isExit = commands.get(command).exit(stavHry);
             } else {
                 System.out.println("neznamy prikaz");
             }

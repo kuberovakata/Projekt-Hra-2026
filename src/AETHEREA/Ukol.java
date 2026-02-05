@@ -1,12 +1,53 @@
 package AETHEREA;
 
-import Předměty.Predmet;
-
 public class Ukol {
 
-    private Lokace mistoKonani;
+    private String nazevMistoKonani;
+    private int id;
     private String popis;
-    private Predmet potrebnyNastroj;
+    private String nazevPotrebnyPredmet;
+    private boolean jeSplneno;
 
+    public Ukol() {
+    }
 
+    public String getNazevMistoKonani() {
+        return nazevMistoKonani;
+    }
+
+    public void setNazevMistoKonani(String nazevMistoKonani) {
+        this.nazevMistoKonani = nazevMistoKonani;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPopis() {
+        return popis;
+    }
+
+    public void setPopis(String popis) {
+        this.popis = popis;
+    }
+
+    public String getNazevPotrebnyPredmet() {
+        return nazevPotrebnyPredmet;
+    }
+
+    public void setNazevPotrebnyPredmet(String nazevPotrebnyPredmet) {
+        this.nazevPotrebnyPredmet = nazevPotrebnyPredmet;
+    }
+
+    public boolean isJeSplneno() {
+        return jeSplneno;
+    }
+
+    public void setJeSplneno(boolean jeSplneno) {
+        this.jeSplneno = jeSplneno;
+    }
 }

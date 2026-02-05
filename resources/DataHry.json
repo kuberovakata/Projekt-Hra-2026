@@ -175,5 +175,28 @@
       "nazev": "Odběrový box",
       "popis": "Hermeticky uzavíratelná nádoba s robotickou pinzetou pro bezpečnou manipulaci s biologickými vzorky v botanice."
     }
+  ],
+  "seznam_ukolu": [
+    {
+      "id": 1,
+      "nazevMistoKonani": "Hlavní serverovna (Data Center)",
+      "popis": "Získej bezpečnostní záznamy z kamerového systému stanice.",
+      "nazevPotrebnyPredmet": "Prázdný datový disk",
+      "jeSplneno": false
+    },
+    {
+      "id": 2,
+      "nazevMistoKonani": "Reaktorová hala (The Core)",
+      "popis": "Zprovozni jádro instalací nové procesorové jednotky.",
+      "nazevPotrebnyPredmet": "Nová procesorová jednotka",
+      "jeSplneno": false
+    },
+    {
+      "id": 3,
+      "nazevMistoKonani": "Botanická laboratoř (Hydroponics)",
+      "popis": "Odeber vzácné biologické vzorky rostliny Aethera.",
+      "nazevPotrebnyPredmet": "Odběrový box",
+      "jeSplneno": false
+    }
   ]
 }

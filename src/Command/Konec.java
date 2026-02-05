@@ -7,7 +7,7 @@ public class Konec implements Command{
         return "konec programu";
     }
 
-    public boolean exit() {
+    public boolean exit(StavHry stavHry) {
         return true;
     }
 }

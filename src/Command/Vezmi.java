@@ -17,10 +17,6 @@ public class Vezmi implements Command {
 
             return stavHry.getProPredmet().nastavitAktualniPredmet(imput, stavHry);
         }
-
-
-
-
         System.out.println("Co?");
         String input = scanner.nextLine();
 
@@ -33,7 +29,7 @@ public class Vezmi implements Command {
     }
 
     @Override
-    public boolean exit() {
+    public boolean exit(StavHry stavHry) {
         return false;
     }
 }

@@ -7,13 +7,15 @@ import Inventář.InventářProOdpad;
 import Inventář.InventářProPredmet;
 import Inventář.InventářVModulu;
 
+import java.util.ArrayList;
+
 public class StavHry {
 
     private Lokace AktualniLokace;
     private String StavHry;
     private InventářProOdpad inventářProOdpad;
     private ProcentaProgresu procentaProgresu;
-    private Ukol ukoly;
+    private ArrayList<Ukol> ukoly;
     private boolean jeOdemcenaReaktorovaMistnost;
     private boolean maIDkartu;
     private InventářVModulu vmodulu;
@@ -24,6 +26,28 @@ public class StavHry {
         this.procentaProgresu = procentaProgresu;
         this.vmodulu = inventářVModulu;
         this.proPredmet = proPredmet;
+        this.ukoly = DataHry.getSeznam_ukolu();
+    }
+
+    public boolean zkontrolujKonecMise() {
+        // 1. Podmínka: Všechny 3 úkoly musí být splněny
+        for (Ukol u : DataHry.getSeznam_ukolu()) {
+            if (!u.isJeSplneno()) {
+                return false;
+            }
+        }
+
+        // 2. Podmínka: Celkový průzkum mapy na 100 %
+        // Předpokládám, že máš metodu, která sčítá procenta všech lokací
+        if (getProcentaProgresu().vypocetProcentaZaCelouHru() < 100) {
+            return false;
+        }
+
+        // 3. Podmínka: Hráč musí být v Modulu (startovní/cílová lokace)
+        if (!getAktualniLokace().equals(DataHry.getLocations().getFirst())) {
+            return false;
+        }
+        return true; // Mise je připravena k ukončení!
     }
 
     public ProcentaProgresu getProcentaProgresu() {
@@ -58,11 +82,11 @@ public class StavHry {
         this.inventářProOdpad = inventářProOdpad;
     }
 
-    public Ukol getUkoly() {
+    public ArrayList<Ukol> getUkoly() {
         return ukoly;
     }
 
-    public void setUkoly(Ukol ukoly) {
+    public void setUkoly(ArrayList<Ukol> ukoly) {
         this.ukoly = ukoly;
     }
 

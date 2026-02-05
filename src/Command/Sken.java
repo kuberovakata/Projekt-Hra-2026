@@ -41,7 +41,7 @@ public class Sken implements Command {
     }
 
     @Override
-    public boolean exit() {
+    public boolean exit(StavHry stavHry) {
         return false;
     }
 }

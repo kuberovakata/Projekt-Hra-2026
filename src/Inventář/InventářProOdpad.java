@@ -31,9 +31,7 @@ public class InventářProOdpad {
             return "Takový odpad tu SIS AI nedetekuje.";
         }
 
-//        Tady to mam pouze na TEST  1000 opravit na 100 ================================================================================
-
-        if ((hodnotaMista + nalezenyOdpad.getVahu()) > 1000) {
+        if ((hodnotaMista + nalezenyOdpad.getVahu()) > 100) {
             return "Zásobník je plný! vrat se do CSS-VAULT a zkus to znovu.";
         }
 
