@@ -9,6 +9,7 @@ public class Lokace {
 
     private String id;
     private String nazev;
+    private String podtitulek;
     private String popis;
     private int procentoCistoty;
     private ArrayList<String> vychody;
@@ -74,11 +75,20 @@ public class Lokace {
         this.jeStoProcent = jeStoProcent;
     }
 
+    public String getPodtitulek() {
+        return podtitulek;
+    }
+
+    public void setPodtitulek(String podtitulek) {
+        this.podtitulek = podtitulek;
+    }
+
     @Override
     public String toString() {
         return "Lokace{" +
                 "id='" + id + '\'' +
                 ", nazev='" + nazev + '\'' +
+                ", podtitulek='" + podtitulek + '\'' +
                 ", popis='" + popis + '\'' +
                 ", procentoCistoty=" + procentoCistoty +
                 ", vychody=" + vychody +

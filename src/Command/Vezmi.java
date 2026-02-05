@@ -11,7 +11,9 @@ public class Vezmi implements Command {
         Scanner scanner = new Scanner(System.in);
 
         if (stavHry.getAktualniLokace().equals(DataHry.getLocations().getFirst())){
-            System.out.println(DataHry.getUkolovePredmety());
+            for(int i = 0; i < stavHry.getVmodulu().getPredmetyNaModulu().size(); i++){
+                System.out.println(stavHry.getVmodulu().getPredmetyNaModulu().get(i).getNazev());
+            }
             System.out.println("Co si ches vzit?");
             String imput = scanner.nextLine();
 

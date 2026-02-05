@@ -11,6 +11,9 @@ public class Jdi implements Command {
     public String execute(StavHry stavHry) {
 
         Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < stavHry.getAktualniLokace().getVychody().size(); i++) {
+            System.out.println(stavHry.getAktualniLokace().getVychody().get(i));
+        }
         System.out.println("Kam?");
         String input = scanner.nextLine();
 

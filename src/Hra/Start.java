@@ -26,10 +26,6 @@ public class Start {
         konzole.inicialization();
 
         stavHry.setAktualniLokace(DataHry.getLocations().getFirst());
-        System.out.println(DataHry.getLocations().get(0));
-        System.out.println(DataHry.getLocations().get(1));
-        System.out.println(DataHry.getUkolovePredmety().get(0));
-
         konzole.execute(stavHry);
     }
 }

@@ -8,6 +8,10 @@ public class Použit implements Command {
     @Override
     public String execute(StavHry stavHry) {
 
+        if (stavHry.getProPredmet().getAktualniPredmet() == null) {
+            return "Nix: Momentálně nemám v rukou žádný předmět, který bych mohl použít.";
+        }
+
         for (int i = 0; i < stavHry.getUkoly().size(); i++) {
             String nazevLokaceHrace = stavHry.getAktualniLokace().getNazev();
 
@@ -15,6 +19,7 @@ public class Použit implements Command {
                 if (stavHry.getUkoly().get(i).isJeSplneno()) {
                     return "Tento úkol už jsi splnil. Pokračuj dál v misi.";
                 }
+
                 String aktualniPredmetHrace = stavHry.getProPredmet().getAktualniPredmet().getNazev();
 
                 if (!aktualniPredmetHrace.equals(stavHry.getUkoly().get(i).getNazevPotrebnyPredmet())) {
