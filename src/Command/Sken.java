@@ -6,6 +6,11 @@ import Hra.StavHry;
 import Předměty.Odpad;
 import java.util.ArrayList;
 
+/**
+ * Spravuje command Sken.
+ * metoda execute: vypíše seznam odpadu v aktualni mistnosti a procento v lokaci.
+ * * @author Katka
+ */
 public class Sken implements Command {
 
     @Override

@@ -1,8 +1,12 @@
 package Command;
 
-import Hra.DataHry;
 import Hra.StavHry;
 
+/**
+ * Spravuje command Použít.
+ * metoda execute: spravuje pouzivani objektu.
+ * * @author Katka
+ */
 public class Použit implements Command {
 
     @Override

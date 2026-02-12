@@ -15,6 +15,10 @@ import Command.Použit;
 import Command.Ukoncit;
 
 
+/**
+ * stravuje konzoli.
+ * * @author Paní učítelka Míša
+ */
 public class Konzole {
     private HashMap<String, Command> commands;
     private boolean isExit;

@@ -5,6 +5,10 @@ import Předměty.Predmet;
 
 import java.util.ArrayList;
 
+/**
+ * Reprezentuje a stravuje inventar v modulu.
+ * * @author Katka
+ */
 public class InventářVModulu {
 
     private ArrayList<Predmet> predmetyNaModulu = new ArrayList<>();

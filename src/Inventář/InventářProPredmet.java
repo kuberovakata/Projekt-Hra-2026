@@ -3,6 +3,10 @@ package Inventář;
 import Hra.StavHry;
 import Předměty.Predmet;
 
+/**
+ * Reprezentuje a stravuje inventar pro predmety.
+ * * @author Katka
+ */
 public class InventářProPredmet {
 
     private Predmet aktualniPredmet;

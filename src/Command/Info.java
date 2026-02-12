@@ -1,8 +1,12 @@
 package Command;
 
-import Hra.DataHry;
 import Hra.StavHry;
 
+/**
+ * Spravuje command Info.
+ * metoda execute: napíše aktualni informace o stavu hry.
+ * * @author Katka
+ */
 public class Info implements Command {
 
     @Override
@@ -11,7 +15,7 @@ public class Info implements Command {
         // postupem se pridaji dalsi aktualni informace
         return "Prave se nachazis v" + stavHry.getAktualniLokace().getNazev() + " -- "
                 +stavHry.getAktualniLokace().getProcentoCistoty()+ " -- " +
-                stavHry.getProcentaProgresu().getProcentaZaCelouHru() + zadnyPredmet(stavHry);
+                stavHry.getProcentaProgresu().pocitaniProcent(stavHry) + zadnyPredmet(stavHry);
     }
 
     public String zadnyPredmet(StavHry stavHry) {

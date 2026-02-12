@@ -1,5 +1,9 @@
 package Předměty;
 
+/**
+ * Reprezentuje a stravuje odbad.
+ * * @author Katka
+ */
 public class Odpad {
 
     String nazev;
@@ -8,7 +12,13 @@ public class Odpad {
     int progres;
 
     public Odpad() {
+    }
 
+    public Odpad(String nazev, String velikost, int vahu, int progres) {
+        this.nazev = nazev;
+        this.velikost = velikost;
+        this.vahu = vahu;
+        this.progres = progres;
     }
 
     public int getProgres() {

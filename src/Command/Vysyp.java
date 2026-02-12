@@ -3,8 +3,12 @@ package Command;
 import AETHEREA.Lokace;
 import Hra.DataHry;
 import Hra.StavHry;
-import Inventář.InventářProOdpad;
 
+/**
+ * Spravuje command Info.
+ * metoda execute: vyprezdis batoh hrace.
+ * * @author Katka
+ */
 public class Vysyp implements Command {
 
     public String execute(StavHry stavHry) {

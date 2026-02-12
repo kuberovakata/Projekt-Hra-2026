@@ -4,8 +4,13 @@ import Předměty.Odpad;
 
 import java.util.ArrayList;
 
-public class Lokace {
+/**
+ * Reprezentuje jednotlivé místnosti na vesmírné stanici.
+ * Uchovává informace: id, nazev, podtitulek, popis, procento cistity, vychody, odpady a boolean je sto procent.
+ * * @author Katka
+ */
 
+public class Lokace {
 
     private String id;
     private String nazev;
@@ -17,6 +22,17 @@ public class Lokace {
     private boolean jeStoProcent;
 
     public Lokace() {
+    }
+
+    public Lokace(String id, String nazev, String podtitulek, String popis, int procentoCistoty, ArrayList<String> vychody, ArrayList<Odpad> odpady, boolean jeStoProcent) {
+        this.id = id;
+        this.nazev = nazev;
+        this.podtitulek = podtitulek;
+        this.popis = popis;
+        this.procentoCistoty = procentoCistoty;
+        this.vychody = vychody;
+        this.odpady = odpady;
+        this.jeStoProcent = jeStoProcent;
     }
 
     public String getNazev() {

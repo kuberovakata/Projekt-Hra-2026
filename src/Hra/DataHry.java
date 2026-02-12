@@ -8,6 +8,12 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+/**
+ * Reprezentuje a stravuje Data hry.
+ * Uchovává informace ze souboru json.
+ * * @author Katka
+ */
 public class DataHry {
 
         private final static ObjectMapper objectMapper = new ObjectMapper();
@@ -15,10 +21,10 @@ public class DataHry {
         private static LinkedList<Predmet> ukolovePredmety ;
         private static ArrayList<Ukol> seznam_ukolu;
 
-        public DataHry() {
-        }
+    public DataHry() {
+    }
 
-        public static DataHry nacist(String jsonPath) {
+    public static DataHry nacist(String jsonPath) {
 
             try {
                 final InputStream is = new FileInputStream(jsonPath);

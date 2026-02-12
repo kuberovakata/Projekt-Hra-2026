@@ -2,6 +2,11 @@ package Command;
 
 import Hra.StavHry;
 
+/**
+ * Spravuje command Ukoncit.
+ * metoda execute: pokud jdou splněny všechny podminky, bude mozne ukoncit a dohrat hru.
+ * * @author Katka
+ */
 public class Ukoncit implements Command{
 
     @Override

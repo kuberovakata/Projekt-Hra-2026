@@ -6,6 +6,10 @@ import Předměty.Odpad;
 
 import java.util.ArrayList;
 
+/**
+ * Reprezentuje a stravuje inventar pro odpad.
+ * * @author Katka
+ */
 public class InventářProOdpad {
 
     int hodnotaMista = 0;
@@ -15,7 +19,12 @@ public class InventářProOdpad {
     public InventářProOdpad() {
     }
 
-    public String pridarOdpad(String vybranyOdpad, StavHry stavHry) {
+    public void pridatOdpad(Odpad odpad, ArrayList<Odpad> odpady) {
+        odpady.add(odpad);
+        hodnotaMista += odpad.getVahu();
+    }
+
+    public String pridarOdpadPodleStringu(String vybranyOdpad, StavHry stavHry) {
 
         ArrayList<Odpad> odpadyVMistnosti = stavHry.getAktualniLokace().getOdpady();
         Lokace aktualni = stavHry.getAktualniLokace();

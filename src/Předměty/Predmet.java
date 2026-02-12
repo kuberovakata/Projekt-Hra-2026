@@ -1,5 +1,9 @@
 package Předměty;
 
+/**
+ * Reprezentuje a stravuje predmety.
+ * * @author Katka
+ */
 public class Predmet {
 
     private int id;

@@ -5,6 +5,10 @@ import Inventář.InventářProOdpad;
 import Inventář.InventářProPredmet;
 import Inventář.InventářVModulu;
 
+/**
+ * Stravuje start hry.
+ * * @author Katka
+ */
 public class Start {
 
 

@@ -6,6 +6,11 @@ import Hra.StavHry;
 
 import java.util.Scanner;
 
+/**
+ * Spravuje command Jdi.
+ * metoda execute: spravuje pohyb po mapě.
+ * * @author Katka
+ */
 public class Jdi implements Command {
     @Override
     public String execute(StavHry stavHry) {

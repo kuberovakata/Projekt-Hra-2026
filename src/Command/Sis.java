@@ -4,6 +4,11 @@ import Hra.StavHry;
 
 import java.util.Scanner;
 
+/**
+ * Spravuje command Sis.
+ * metoda execute: privolas hozhovor s AI.
+ * * @author Katka
+ */
 public class Sis implements Command {
     @Override
     public String execute(StavHry stavHry) {

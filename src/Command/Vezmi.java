@@ -5,6 +5,11 @@ import Hra.StavHry;
 
 import java.util.Scanner;
 
+/**
+ * Spravuje command Venzmi.
+ * metoda execute: vezmes vybrany objdekt.
+ * * @author Katka
+ */
 public class Vezmi implements Command {
 
     public String execute(StavHry stavHry) {
@@ -27,7 +32,7 @@ public class Vezmi implements Command {
             stavHry.setMaIDkartu(true);
             return "uspesne jsi nasel ID kartu";
         }
-        return stavHry.getInventářProOdpad().pridarOdpad(input, stavHry);
+        return stavHry.getInventářProOdpad().pridarOdpadPodleStringu(input, stavHry);
     }
 
     @Override

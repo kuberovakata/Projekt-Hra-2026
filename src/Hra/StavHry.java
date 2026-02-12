@@ -9,6 +9,10 @@ import Inventář.InventářVModulu;
 
 import java.util.ArrayList;
 
+/**
+ * Reprezentuje a stravuje vsechny menitelne informace hry.
+ * * @author Katka
+ */
 public class StavHry {
 
     private Lokace AktualniLokace;
@@ -26,27 +30,25 @@ public class StavHry {
         this.procentaProgresu = procentaProgresu;
         this.vmodulu = inventářVModulu;
         this.proPredmet = proPredmet;
-        this.ukoly = DataHry.getSeznam_ukolu();
     }
 
     public boolean zkontrolujKonecMise() {
-        // 1. Podmínka: Všechny 3 úkoly musí být splněny
+
+        if (!getAktualniLokace().equals(DataHry.getLocations().getFirst())) {
+            return false;
+        }
+
         for (Ukol u : DataHry.getSeznam_ukolu()) {
             if (!u.isJeSplneno()) {
                 return false;
             }
         }
 
-        // 2. Podmínka: Celkový průzkum mapy na 100 %
-        // Předpokládám, že máš metodu, která sčítá procenta všech lokací
-        if (getProcentaProgresu().vypocetProcentaZaCelouHru() < 100) {
+        procentaProgresu.vypocetProcentaZaCelouHru();
+        if (getProcentaProgresu().getProcentaZaCelouHru() < 100) {
             return false;
         }
 
-        // 3. Podmínka: Hráč musí být v Modulu (startovní/cílová lokace)
-        if (!getAktualniLokace().equals(DataHry.getLocations().getFirst())) {
-            return false;
-        }
         return true; // Mise je připravena k ukončení!
     }
 

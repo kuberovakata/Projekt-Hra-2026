@@ -1,5 +1,11 @@
 package AETHEREA;
 
+/**
+ * Reprezentuje jednotlivé ukoly vesmírné stanici.
+ * Uchovává informace: nazev mstosti konani, id, popis, název potřebného předmětu a boolean je splněno.
+ * * @author Katka
+ */
+
 public class Ukol {
 
     private String nazevMistoKonani;
