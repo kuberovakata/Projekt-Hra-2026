@@ -4,7 +4,7 @@ import AETHEREA.Lokace;
 import Command.Vysyp;
 import Hra.DataHry;
 import Hra.StavHry;
-import Inventář.InventářProOdpad;
+import Inventář.InventarProOdpad;
 import Předměty.Odpad;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VysypTest {
 
-    InventářProOdpad inventářProOdpad = new InventářProOdpad();
-    StavHry stavHry = new StavHry(inventářProOdpad, null, null, null);
+    InventarProOdpad inventarProOdpad = new InventarProOdpad();
+    StavHry stavHry = new StavHry(inventarProOdpad, null, null, null);
 
 
     Odpad odpad0 = new Odpad( "Žlutý sliz", "střední", 15, 15 );
@@ -39,8 +39,8 @@ class VysypTest {
         stavHry.setAktualniLokace(lokace);
         LokaceProDataHry.add(lokace);
         dataHry.setLocations(LokaceProDataHry);
-        stavHry.getInventářProOdpad().pridatOdpad(odpad0, stavHry.getInventářProOdpad().getInventářProOdpad());
-        stavHry.getInventářProOdpad().pridatOdpad(odpad1, stavHry.getInventářProOdpad().getInventářProOdpad());
+        stavHry.getInventářProOdpad().pridatOdpad(odpad0, stavHry.getInventářProOdpad().getInventarProOdpad());
+        stavHry.getInventářProOdpad().pridatOdpad(odpad1, stavHry.getInventářProOdpad().getInventarProOdpad());
     }
 
     @Test
@@ -48,7 +48,7 @@ class VysypTest {
         Vysyp vysyp = new Vysyp();
         setUp();
         vysyp.execute(stavHry);
-        assertSame(0,stavHry.getInventářProOdpad().getInventářProOdpad().size());
+        assertSame(0,stavHry.getInventářProOdpad().getInventarProOdpad().size());
     }
 
     @Test

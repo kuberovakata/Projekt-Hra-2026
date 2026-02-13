@@ -1,9 +1,9 @@
 package Hra;
 
 import AETHEREA.ProcentaProgresu;
-import Inventář.InventářProOdpad;
-import Inventář.InventářProPredmet;
-import Inventář.InventářVModulu;
+import Inventář.InventarProOdpad;
+import Inventář.InventarProPredmet;
+import Inventář.InventarVModulu;
 
 /**
  * Stravuje start hry.
@@ -17,11 +17,11 @@ public class Start {
         DataHry data = DataHry.nacist("resources/DataHry.json");
 
         Konzole konzole = new Konzole();
-        InventářProOdpad inventářProOdpad = new InventářProOdpad();
+        InventarProOdpad inventarProOdpad = new InventarProOdpad();
         ProcentaProgresu procentaProgresu = new ProcentaProgresu(0, 0);
-        InventářVModulu inventářVModulu = new InventářVModulu();
-        InventářProPredmet inventářProPredmet = new InventářProPredmet();
-        StavHry stavHry = new StavHry(inventářProOdpad, procentaProgresu, inventářVModulu, inventářProPredmet);
+        InventarVModulu inventarVModulu = new InventarVModulu();
+        InventarProPredmet inventarProPredmet = new InventarProPredmet();
+        StavHry stavHry = new StavHry(inventarProOdpad, procentaProgresu, inventarVModulu, inventarProPredmet);
 
         stavHry.setJeOdemcenaReaktorovaMistnost(false);
         stavHry.setMaIDkartu(false);

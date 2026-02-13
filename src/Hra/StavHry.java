@@ -3,9 +3,9 @@ package Hra;
 import AETHEREA.Lokace;
 import AETHEREA.ProcentaProgresu;
 import AETHEREA.Ukol;
-import Inventář.InventářProOdpad;
-import Inventář.InventářProPredmet;
-import Inventář.InventářVModulu;
+import Inventář.InventarProOdpad;
+import Inventář.InventarProPredmet;
+import Inventář.InventarVModulu;
 
 import java.util.ArrayList;
 
@@ -17,18 +17,18 @@ public class StavHry {
 
     private Lokace AktualniLokace;
     private String StavHry;
-    private InventářProOdpad inventářProOdpad;
+    private InventarProOdpad inventarProOdpad;
     private ProcentaProgresu procentaProgresu;
     private ArrayList<Ukol> ukoly;
     private boolean jeOdemcenaReaktorovaMistnost;
     private boolean maIDkartu;
-    private InventářVModulu vmodulu;
-    private InventářProPredmet  proPredmet;
+    private InventarVModulu vmodulu;
+    private InventarProPredmet proPredmet;
 
-    public StavHry(InventářProOdpad inventářProOdpad, ProcentaProgresu procentaProgresu, InventářVModulu inventářVModulu, InventářProPredmet proPredmet) {
-        this.inventářProOdpad = inventářProOdpad;
+    public StavHry(InventarProOdpad inventarProOdpad, ProcentaProgresu procentaProgresu, InventarVModulu inventarVModulu, InventarProPredmet proPredmet) {
+        this.inventarProOdpad = inventarProOdpad;
         this.procentaProgresu = procentaProgresu;
-        this.vmodulu = inventářVModulu;
+        this.vmodulu = inventarVModulu;
         this.proPredmet = proPredmet;
     }
 
@@ -76,12 +76,12 @@ public class StavHry {
         StavHry = stavHry;
     }
 
-    public InventářProOdpad getInventářProOdpad() {
-        return inventářProOdpad;
+    public InventarProOdpad getInventářProOdpad() {
+        return inventarProOdpad;
     }
 
-    public void setInventářProOdpad(InventářProOdpad inventářProOdpad) {
-        this.inventářProOdpad = inventářProOdpad;
+    public void setInventářProOdpad(InventarProOdpad inventarProOdpad) {
+        this.inventarProOdpad = inventarProOdpad;
     }
 
     public ArrayList<Ukol> getUkoly() {
@@ -108,19 +108,19 @@ public class StavHry {
         this.maIDkartu = maIDkartu;
     }
 
-    public InventářVModulu getVmodulu() {
+    public InventarVModulu getVmodulu() {
         return vmodulu;
     }
 
-    public void setVmodulu(InventářVModulu vmodulu) {
+    public void setVmodulu(InventarVModulu vmodulu) {
         this.vmodulu = vmodulu;
     }
 
-    public InventářProPredmet getProPredmet() {
+    public InventarProPredmet getProPredmet() {
         return proPredmet;
     }
 
-    public void setProPredmet(InventářProPredmet proPredmet) {
+    public void setProPredmet(InventarProPredmet proPredmet) {
         this.proPredmet = proPredmet;
     }
 }

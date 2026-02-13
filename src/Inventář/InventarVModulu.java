@@ -9,11 +9,11 @@ import java.util.ArrayList;
  * Reprezentuje a stravuje inventar v modulu.
  * * @author Katka
  */
-public class InventářVModulu {
+public class InventarVModulu {
 
     private ArrayList<Predmet> predmetyNaModulu = new ArrayList<>();
 
-    public InventářVModulu() {
+    public InventarVModulu() {
     }
 
     public ArrayList<Predmet> nacistPredmety() {

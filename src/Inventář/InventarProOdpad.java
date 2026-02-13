@@ -10,13 +10,13 @@ import java.util.ArrayList;
  * Reprezentuje a stravuje inventar pro odpad.
  * * @author Katka
  */
-public class InventářProOdpad {
+public class InventarProOdpad {
 
     int hodnotaMista = 0;
     int pocetPolozek;
-    ArrayList<Odpad> inventářProOdpad = new ArrayList<>();
+    ArrayList<Odpad> inventarProOdpad = new ArrayList<>();
 
-    public InventářProOdpad() {
+    public InventarProOdpad() {
     }
 
     public void pridatOdpad(Odpad odpad, ArrayList<Odpad> odpady) {
@@ -44,7 +44,7 @@ public class InventářProOdpad {
             return "Zásobník je plný! vrat se do CSS-VAULT a zkus to znovu.";
         }
 
-        inventářProOdpad.add(nalezenyOdpad);
+        inventarProOdpad.add(nalezenyOdpad);
         hodnotaMista += nalezenyOdpad.getVahu();
 
         stavHry.getAktualniLokace().setProcentoCistoty(stavHry.getAktualniLokace().getProcentoCistoty() + nalezenyOdpad.getProgres());
@@ -58,7 +58,7 @@ public class InventářProOdpad {
     }
 
     public void vyprazdnit() {
-        inventářProOdpad.clear();
+        inventarProOdpad.clear();
         hodnotaMista = 0;
     }
 
@@ -78,12 +78,12 @@ public class InventářProOdpad {
         this.pocetPolozek = pocetPolozek;
     }
 
-    public ArrayList<Odpad> getInventářProOdpad() {
-        return inventářProOdpad;
+    public ArrayList<Odpad> getInventarProOdpad() {
+        return inventarProOdpad;
     }
 
-    public void setInventářProOdpad(ArrayList<Odpad> inventářProOdpad) {
-        this.inventářProOdpad = inventářProOdpad;
+    public void setInventarProOdpad(ArrayList<Odpad> inventarProOdpad) {
+        this.inventarProOdpad = inventarProOdpad;
     }
 
     @Override
@@ -91,7 +91,7 @@ public class InventářProOdpad {
         return "InventářProOdpad{" +
                 "hodnotaMista=" + hodnotaMista +
                 ", pocetPolozek=" + pocetPolozek +
-                ", inventářProOdpad=" + inventářProOdpad +
+                ", inventářProOdpad=" + inventarProOdpad +
                 '}';
     }
 }

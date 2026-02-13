@@ -11,7 +11,7 @@ import Command.Help;
 import Command.Info;
 import Command.Sis;
 import Command.Sken;
-import Command.Použit;
+import Command.Pouzit;
 import Command.Ukoncit;
 
 
@@ -39,7 +39,7 @@ public class Konzole {
         commands.put("vezmi", new Vezmi());
         commands.put("sis", new Sis());
         commands.put("sken", new Sken());
-        commands.put("pouzit", new Použit());
+        commands.put("pouzit", new Pouzit());
         commands.put("ukoncit", new Ukoncit());
     }
 

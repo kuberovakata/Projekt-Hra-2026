@@ -7,11 +7,11 @@ import Předměty.Predmet;
  * Reprezentuje a stravuje inventar pro predmety.
  * * @author Katka
  */
-public class InventářProPredmet {
+public class InventarProPredmet {
 
     private Predmet aktualniPredmet;
 
-    public InventářProPredmet() {
+    public InventarProPredmet() {
     }
 
     public String nastavitAktualniPredmet(String imput, StavHry stavHry) {

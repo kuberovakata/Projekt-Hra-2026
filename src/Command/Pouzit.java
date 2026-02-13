@@ -7,7 +7,7 @@ import Hra.StavHry;
  * metoda execute: spravuje pouzivani objektu.
  * * @author Katka
  */
-public class Použit implements Command {
+public class Pouzit implements Command {
 
     @Override
     public String execute(StavHry stavHry) {
