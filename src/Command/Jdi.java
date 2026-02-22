@@ -3,6 +3,7 @@ package Command;
 import AETHEREA.Lokace;
 import Hra.DataHry;
 import Hra.StavHry;
+import Hra.ToolBox;
 
 import java.util.Scanner;
 
@@ -16,11 +17,15 @@ public class Jdi implements Command {
     public String execute(StavHry stavHry) {
 
         Scanner scanner = new Scanner(System.in);
+        ToolBox.mezara();
+        System.out.println("┌─TVÉ MOŽNOSTI──────────────────────────────────────────────────────────────────────────────────────");
         for (int i = 0; i < stavHry.getAktualniLokace().getVychody().size(); i++) {
-            System.out.println(stavHry.getAktualniLokace().getVychody().get(i));
+            System.out.println("│ " +(i+1) +". " + stavHry.getAktualniLokace().getVychody().get(i));
         }
-        System.out.println("Kam?");
+        System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────");
+        System.out.print("Tvůj výběr? >> ");
         String input = scanner.nextLine();
+        ToolBox.mezara();
 
         Lokace aktualni = stavHry.getAktualniLokace();
 

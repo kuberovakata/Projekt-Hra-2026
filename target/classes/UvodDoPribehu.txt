@@ -1,0 +1,17 @@
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [ SYSTÉM: Čtení archivního záznamu... ]                                                          │
+│                                                                                                  │
+│ Vesmírná stanice Aethera byla kdysi symbolem lidského pokroku. Jako nejmodernější hydroponické   │
+│ a výzkumné centrum mělo za úkol jediné: najít způsob, jak nasytit umírající Zemi.                │
+│                                                                                                  │
+│ Před šesti měsíci se však spojení přerušilo. Poslední zpráva obsahovala jen dvě slova:           │
+│  'Zamoření postoupilo'.                                                                          │
+│                                                                                                  │
+│ Dnes je Aethera jen tichým mementem v temnotě vesmíru. Korporace vyslala tebe, specialistku      │
+│ na hloubkovou dekontaminaci, s jediným cílem: vstoupit do trosek, eliminovat biologický          │
+│ odpad a restartovat hlavní reaktor stanice.                                                      │
+│                                                                                                  │
+│ Tvá loď, Mobilní operační modul CSS-VAULT, se právě připojila k hangáru.                         │
+│                                                                                                  │
+│ Stanice Aethera tě očekává."                                                                     │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘

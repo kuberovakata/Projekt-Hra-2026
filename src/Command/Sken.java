@@ -6,6 +6,8 @@ import Hra.StavHry;
 import Předměty.Odpad;
 import java.util.ArrayList;
 
+import static Hra.ToolBox.*;
+
 /**
  * Spravuje command Sken.
  * metoda execute: vypíše seznam odpadu v aktualni mistnosti a procento v lokaci.
@@ -19,8 +21,9 @@ public class Sken implements Command {
         Lokace aktualni = stavHry.getAktualniLokace();
         ArrayList<Odpad> odpady = aktualni.getOdpady();
 
-        System.out.println("\n[SIS AI]: Zahajuji hloubkový sken sektoru: " + aktualni.getNazev());
-        System.out.println("-------------------------------------------------------");
+        mezara();
+        System.out.println(ANSI_ZELENA + "[ SIS ]:" + ANSI_RESET + " Zahajuji hloubkový sken sektoru: " + aktualni.getNazev());
+        System.out.println("----------------------------------------------------------------------------------------------------");
 
         if (stavHry.getAktualniLokace().getProcentoCistoty() == 100) {
             System.out.println("Stav: SEKTOR JE 100% DEKONTAMINOVÁN.");
@@ -39,10 +42,9 @@ public class Sken implements Command {
             System.out.println("ID karta");
         }
         int aktualniCistota = 100 - zbyvajiciProgres;
-        System.out.println("-------------------------------------------------------");
-        System.out.println("AKTUÁLNÍ ČISTOTA SEKTORU: " + aktualniCistota + "%");
-        System.out.println();
-        return "";
+        System.out.println("----------------------------------------------------------------------------------------------------");
+        System.out.println(ANSI_ZELENA + "AKTUÁLNÍ ČISTOTA SEKTORU: " + aktualniCistota + "%" + ANSI_RESET );
+        return " ";
     }
 
     @Override
